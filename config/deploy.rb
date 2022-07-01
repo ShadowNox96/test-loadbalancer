@@ -10,6 +10,8 @@ set :rails_env, fetch(:stage)
 set :rvm_ruby_version, deploysecret(:rvm_ruby_version)
 set :rvm_type, :user
 
+set :rvm_map_bins, %w{gem rake ruby rails bundle}
+
 set :application, deploysecret(:application)
 set :full_app_name, "#{fetch(:application)}_#{fetch(:stage)}"
 # If ssh access is restricted, probably you need to use https access
