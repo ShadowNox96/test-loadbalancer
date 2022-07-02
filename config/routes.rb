@@ -8,4 +8,6 @@ Rails.application.routes.draw do
       get :index
     end
   end
+
+  post 'print' => 'home#print', :as => 'print'
 end

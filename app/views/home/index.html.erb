@@ -1,1 +1,17 @@
 <h1>Hola. aplicación desplegada en el Nodo 1</h1>
+
+	<%= form_tag print_path do %>
+			
+					<%= label_tag 'Usuario' %>
+					<%= text_field_tag :user, params[:user] %>
+					<%= submit_tag "Echo user", :class => '' %> </td>
+  <% end %>
+
+  
+<% flash.each do |type, msg| %>
+  <div>
+    <%= msg %>
+  </div>
+<% end %>
+
+<%= image_tag ("pdc/indice.png") %>
