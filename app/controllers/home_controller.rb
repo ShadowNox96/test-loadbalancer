@@ -5,7 +5,7 @@ class HomeController < ApplicationController
 
   def print
     @user = params[:user]
-    redirect_to home_index_path, notice: "User: #{@user}"
+    render :index 
   end
 end
 

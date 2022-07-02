@@ -6,8 +6,9 @@ Rails.application.routes.draw do
   resources :home do
     collection do
       get :index
+      post :print
     end
   end
 
-  post 'print' => 'home#print', :as => 'print'
+  
 end
