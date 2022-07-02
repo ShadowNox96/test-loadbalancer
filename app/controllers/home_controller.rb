@@ -1,6 +1,10 @@
 class HomeController < ApplicationController
+  skip_before_action :verify_authenticity_token
   def index 
-    @user
+    @user = params[:user]
+    puts '==========================USUARIO ============'
+    puts params
+    flash[:alert] = "USER: #{@user}"
   end 
 
   def print
