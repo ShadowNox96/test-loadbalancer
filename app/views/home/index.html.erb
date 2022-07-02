@@ -1,6 +1,6 @@
 <h1>Hola. aplicación desplegada en el Nodo 2</h1>
 
-	<%= form_tag print_path, method: :get  do %>
+	<%= form_tag print_path  do %>
     <%= label_tag 'Usuario' %>
     <%= text_field_tag :user, params[:user] %>
     <%= submit_tag "Echo user", :class => '' %> </td>
